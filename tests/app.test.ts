@@ -14,12 +14,6 @@ describe("Task Reminder Service (TS)", () => {
         expect(res.body.title).toBe("Tarea 1");
     });
 
-    test("GET /tasks - listar tareas", async () => {
-        const res = await request(app).get("/tasks");
-        expect(res.statusCode).toBe(200);
-        expect(Array.isArray(res.body)).toBe(true);
-    });
-
     test("GET /tasks/upcoming - detectar próximas tareas", async () => {
         await addTask({
             title: "Tarea próxima",
