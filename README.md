@@ -17,11 +17,6 @@ Implementa un servicio en Node.js para manejar tareas con fechas de vencimiento.
 - Si una tarea está próxima a vencer al momento de crearse, imprime `Recordatorio enviado`.
 - Las tareas vencidas **no deben** considerarse próximas.
 
-## Estructura
-
-- Implementa en `src/app.js`
-- Las rutas deben estar definidas en `src/server.js`
-- Las pruebas ya están preparadas en `test/app.test.js`
 
 Ejecuta con:
 
